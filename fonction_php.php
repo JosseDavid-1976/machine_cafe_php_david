@@ -39,7 +39,35 @@ function preparerBoisson($Boisson,$nbrSucre){
     }elseif ($Boisson === "the"){
       echo the($nbrSucre);
     }
-    
+};
+  function affichage($texte){
+    if (isset( $_POST["sucre"]) && isset($_POST["boisson"])){
+      $nbrSucre = $_POST["sucre"];
+      $commandeBoisson = $_POST["boisson"]; 
+      $texte = preparer($commandeBoisson,$nbrSucre);
+  }else{
+    echo $texte;
+  }
   };
+
+  $recette = array("expresso"=> array("cafe"=>1,"eau"=>1),
+                   "cafeLong"=> array("cafe"=>2,"eau"=>2),
+                   "the"=> array("the"=>1,"eau"=>1));
+  
+
+  
+  function preparer($commandeBoisson,$nbrSucre){
+
+    $recette = array("expresso"=> array("cafe"=>1,"eau"=>1),
+    "cafeLong"=> array("cafe"=>2,"eau"=>2),
+    "the"=> array("the"=>1,"eau"=>1));
+    echo $commandeBoisson." : ";
+    foreach( $recette["$commandeBoisson"] as $recetteMachine=>$quantite){
+      
+      echo $recetteMachine." : ";
+      echo $quantite." "; 
+    } 
+    echo "sucre : ".$nbrSucre ;
+  }
 ?>
 
