@@ -7,7 +7,7 @@
 <!DOCTYPE html><!--creation de mon block html-->
 <html>
   <head>
-  <title>preparerBoisson</title><!--titre de la page-->
+  <title>preparerBois</title><!--titre de la page-->
   <meta charset="utf-8">
   
   </head>
