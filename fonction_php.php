@@ -134,6 +134,6 @@ echo $mesIngredients;
       ingredientStock($bdd,$_POST["boisson"]);
     };
 
-  
+  //end of file
 ?>
 
