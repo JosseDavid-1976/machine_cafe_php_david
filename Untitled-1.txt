@@ -1,0 +1,12 @@
+ <meta http-equiv="refresh" content="3; url=<?php echo $_SERVER["HTTP_REFERER"]  ; ?>" />
+  <?=preparerBoisson($Boisson,$nbrSucre);?>
+
+    function affichage(){
+    if (isset( $_POST["sucre"]) && isset($_POST["boisson"] && isset($message == "En attente" ))){
+      $nbrSucre = $_POST["sucre"];
+      $Boisson = $_POST["boisson"]; 
+      $message = preparerBoisson($Boisson,$nbrSucre);
+  }
+  };
+
+
